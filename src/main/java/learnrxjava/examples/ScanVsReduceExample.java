@@ -6,6 +6,7 @@ import rx.Observable;
 
 public class ScanVsReduceExample {
     public static void main(String... args) {
+
         System.out.println("reduce ...");
         Observable.range(0, 10).reduce(new ArrayList<>(), (list, i) -> {
             list.add(i);
@@ -24,5 +25,6 @@ public class ScanVsReduceExample {
             list.add(i);
             return list;
         }).forEach(System.out::println);
+
     }
 }

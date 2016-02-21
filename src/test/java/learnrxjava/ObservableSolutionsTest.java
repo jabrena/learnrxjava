@@ -27,6 +27,7 @@ public class ObservableSolutionsTest {
         return new ObservableSolutions();
     }
 
+/*
     @Test
     public void exerciseHello() {
         TestSubscriber<String> ts = new TestSubscriber<>();
@@ -35,7 +36,9 @@ public class ObservableSolutionsTest {
         ts.assertNoErrors();
         ts.assertReceivedOnNext(Arrays.asList("Hello World!"));
     }
+    */
 
+/*
     @Test
     public void exerciseMap() {
         TestSubscriber<String> ts = new TestSubscriber<>();
@@ -45,7 +48,8 @@ public class ObservableSolutionsTest {
         assertEquals(1, ts.getOnNextEvents().size());
         assertTrue(ts.getOnNextEvents().get(0).startsWith("Hello "));
     }
-
+*/
+/*
     @Test
     public void exerciseFilterMap() {
         TestSubscriber<String> ts = new TestSubscriber<>();
@@ -54,7 +58,9 @@ public class ObservableSolutionsTest {
         ts.assertNoErrors();
         ts.assertReceivedOnNext(Arrays.asList("2-Even", "4-Even", "6-Even", "8-Even", "10-Even"));
     }
+*/
 
+/*
     @Test
     public void exerciseConcatMap() {
         TestSubscriber<Integer> ts = new TestSubscriber<>();
@@ -77,7 +83,9 @@ public class ObservableSolutionsTest {
         ts.assertNoErrors();
         ts.assertReceivedOnNext(Arrays.asList(70111470, 654356453, 65432445, 675465));
     }
+    */
 
+/*
     @Test
     public void exerciseFlatMap() {
         TestSubscriber<Map<Integer, Integer>> ts = new TestSubscriber<>();
@@ -101,7 +109,8 @@ public class ObservableSolutionsTest {
         assertTrue(map.containsKey(65432445));
         assertTrue(map.containsKey(675465));
     }
-
+*/
+/*
     @Test
     public void exerciseReduce() {
         TestSubscriber<Integer> ts = new TestSubscriber<>();
@@ -110,7 +119,9 @@ public class ObservableSolutionsTest {
         ts.assertNoErrors();
         ts.assertReceivedOnNext(Arrays.asList(12));
     }
+*/
 
+/*
     @Test
     public void exerciseMovie() {
         TestSubscriber<Map<Integer, JSON>> ts = new TestSubscriber<>();
@@ -176,7 +187,8 @@ public class ObservableSolutionsTest {
         assertTrue(map.containsKey(675465));
         assertEquals(map.get(675465).toString(), "{boxart=http://cdn-0.nflximg.com/images/2891/Fracture120.jpg, id=675465, title=Fracture}");
     }
-
+*/
+    /*
     @Test
     public void exerciseZip() {
         TestSubscriber<String> ts = new TestSubscriber<>();
@@ -185,7 +197,9 @@ public class ObservableSolutionsTest {
         ts.assertNoErrors();
         ts.assertReceivedOnNext(Arrays.asList("one fish", "two fish", "blue fish", "red fish"));
     }
+    */
 
+/*
     @Test
     public void handleError() {
         TestSubscriber<String> ts = new TestSubscriber<>();
@@ -194,7 +208,9 @@ public class ObservableSolutionsTest {
         ts.assertNoErrors();
         ts.assertReceivedOnNext(Arrays.asList("default-value"));
     }
+    */
 
+/*
     @Test
     public void retry() {
         TestSubscriber<String> ts = new TestSubscriber<>();
@@ -212,6 +228,7 @@ public class ObservableSolutionsTest {
         ts.assertNoErrors();
         ts.assertReceivedOnNext(Arrays.asList("success!"));
     }
+*/
 
     /**
      * The data stream fails intermittently so return the stream

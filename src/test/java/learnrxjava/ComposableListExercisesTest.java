@@ -34,6 +34,7 @@ public class ComposableListExercisesTest {
         assertMatch(e, s);
     }
 
+/*
     @Test
     public void testExercise4map() {
         System.out.println("----------- testExercise4 map ----------------");
@@ -41,7 +42,9 @@ public class ComposableListExercisesTest {
         slr.forEach(System.out::println);
         assertEquals(Arrays.asList(2, 3, 4), slr);
     }
+    */
 
+/*
     @Test
     public void testExercise5() {
         System.out.println("----------- testExercise5 ----------------");
@@ -57,7 +60,8 @@ public class ComposableListExercisesTest {
         ComposableList<Video> s = ComposableListSolutions.exercise6();
         assertMatch(e, s);
     }
-
+*/
+/*
     @Test
     public void testExercise7filter() {
         System.out.println("----------- testExercise7 filter ----------------");
@@ -82,6 +86,8 @@ public class ComposableListExercisesTest {
         assertMatch(e, s);
     }
 
+*/
+/*
     @Test
     public void testExercise10() {
         System.out.println("----------- testExercise10 ----------------");
@@ -89,7 +95,9 @@ public class ComposableListExercisesTest {
         slr.forEach(System.out::println);
         assertEquals(Arrays.asList(2, 3, 4, 3, 4, 5, 4, 5, 6), slr);
     }
+    */
 
+/*
     @Test
     public void testExercise11() {
         System.out.println("----------- testExercise11 ----------------");
@@ -97,6 +105,7 @@ public class ComposableListExercisesTest {
         ComposableList<Integer> s = ComposableListSolutions.exercise11();
         assertMatch(e, s);
     }
+
 
     @Test
     public void testExercise12() {
@@ -119,7 +128,8 @@ public class ComposableListExercisesTest {
         BoxArt s = ComposableListSolutions.exercise13();
         assertEquals(e, s);
     }
-
+*/
+/*
     @Test
     public void testExercise14reduce() {
         System.out.println("----------- testExercise14 reduce ----------------");
@@ -127,6 +137,7 @@ public class ComposableListExercisesTest {
         slr.forEach(System.out::println);
         assertEquals(Arrays.asList(6), slr);
     }
+    */
 
     @Test
     public void testExercise15reduce() {
@@ -136,6 +147,7 @@ public class ComposableListExercisesTest {
         assertEquals(Arrays.asList(7), slr);
     }
 
+/*
     @Test
     public void testExercise16() {
         System.out.println("----------- testExercise16 ----------------");
@@ -176,6 +188,7 @@ public class ComposableListExercisesTest {
         assertMatch(e, s);
     }
 
+
     @Test
     public void testExercise21zip() {
         System.out.println("----------- testExercise21 zip ----------------");
@@ -183,7 +196,8 @@ public class ComposableListExercisesTest {
         slr.forEach(System.out::println);
         assertEquals(Arrays.asList(5, 7, 9), slr);
     }
-
+*/
+/*
     @Test
     public void testExercise22() {
         System.out.println("----------- testExercise22 ----------------");
@@ -199,7 +213,7 @@ public class ComposableListExercisesTest {
         ComposableList<JSON> s = ComposableListSolutions.exercise23();
         assertMatch(e, s);
     }
-
+*/
     private void assertMatch(ComposableList<? extends Object> e, ComposableList<? extends Object> s) {
         if (e.size() != s.size()) {
             throw new RuntimeException("Count Doesn't Match");

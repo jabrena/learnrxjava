@@ -11,6 +11,18 @@ repositories {
 }
 
 dependencies {
-    compile "io.reactivex:rxjava:1.0.0"
+    compile "io.reactivex:rxjava:1.1.1"
     testCompile "junit:junit:4.11"
+}
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'learnrxjava.examples.ConditionalRetry'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
 }
